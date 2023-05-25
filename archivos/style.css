@@ -1,0 +1,114 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+.contenedor{
+    width: 100%;
+}
+
+.header{
+    background: linear-gradient(#D3B8F8, #B8C9F8);
+    padding: 0px 0 0 40px;
+}
+
+.main{
+    background: linear-gradient(#B8C9F8, #3390FF);
+}
+
+.Logo{
+    color: blue;
+    font-size: 3cm;
+}
+
+.Entrada-Salida{
+    display: flex;
+    width: 100%;
+}
+
+.input-Entrada{
+    height: 493px; 
+    width: 567px;
+    margin: 0 60px 10px 120px;
+    background: transparent;
+}
+
+.input-Salida{
+    width: 342px; 
+    height: 541px;
+    margin: 0 60px 0 60px;
+    background: transparent;
+}
+
+::placeholder{
+    text-align: center;
+    color: rgb(blue, #1725B8,#ffffff);
+    font-size: 38px;
+    opacity: 1;
+}
+
+.input-Salida, .input-Entrada{
+    font-size: xx-large;
+    padding: 25px;
+    border-radius: 20px;
+    border-color: blueviolet;
+    border-style: dashed;
+}
+
+.Botones{
+    margin: 0 10% 0 20%;
+    display: flex;
+}
+
+.Encriptar, .Desencriptar{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1725B8;
+    background: #B0B5E9 ;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.Clave{
+    font-weight: bold;
+}
+.Clave::placeholder
+{
+    font-size: 14px;
+}
+.Copy{
+    position: absolute;
+    margin: 0 0 0px 380px;
+}
+.textarea{
+    position: absolute;
+}
+.Icono-Copiar{
+    height: 60px;
+    width: 60px;
+    border: 5px;
+}
+
+.footer input:checked ~ label::before{
+    left: 440px;
+    border: 10px solid rgba(90, 79, 130, 0.2);
+    transform: translateX(-100%);
+}
+
+.Copyright{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(#3390FF, #1D45B7);
+}
+
+@media screen and (max-width:380px){
+    .Entrada-Salida{
+        display: list-item;
+    }
+    .main, .Entrada-Salida,.input-Entrada,.input-Salida,.Botones, .textarea{
+        width: auto;
+    }
+}
